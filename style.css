@@ -3775,162 +3775,235 @@ body {
 }
 
 /* Mobile Responsive Styles */
+@media (max-width: 1024px) {
+  html,
+  body {
+    width: 100% !important;
+    overflow-x: hidden !important;
+  }
+
+  * {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box !important;
+  }
+
+  input,
+  textarea,
+  select {
+    -webkit-appearance: none !important;
+    appearance: none !important;
+    border-radius: 0 !important;
+    font-size: 16px !important;
+  }
+
+  input:focus,
+  textarea:focus {
+    outline: none !important;
+    -webkit-appearance: none !important;
+  }
+}
+
 @media (max-width: 768px) {
+  html,
+  body {
+    width: 100% !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    height: auto !important;
+    overflow-x: hidden !important;
+  }
+
   /* General adjustments */
   :root {
-    --headline-h0-font-size: 28px;
-    --headline-h0-line-height: 32px;
-    --headline-h1-font-size: 22px;
-    --headline-h1-line-height: 26px;
-    --body-p0-font-size: 16px;
-    --body-p0-line-height: 24px;
+    --headline-h0-font-size: 28px !important;
+    --headline-h0-line-height: 32px !important;
+    --headline-h1-font-size: 22px !important;
+    --headline-h1-line-height: 26px !important;
+    --body-p0-font-size: 16px !important;
+    --body-p0-line-height: 24px !important;
   }
 
   /* Hero Section */
-  .hero-section {
-    min-height: 100vh;
-    position: relative;
-    padding: 20px;
+  .hero-section,
+  .about-us,
+  .ventures,
+  .contacts {
+    position: static !important;
+    width: 100% !important;
+    height: auto !important;
+    padding: 20px !important;
+    margin: 0 !important;
+    display: block !important;
+  }
+
+  .hero-section .frame {
+    position: static !important;
+    width: 100% !important;
+    height: auto !important;
+  }
+
+  .hero-section .ellipse {
+    display: none !important;
+  }
+
+  .hero-section .mask-group {
+    max-width: 100% !important;
+    height: auto !important;
+    width: 100% !important;
   }
 
   .hero-section .group {
-    position: relative;
-    top: auto;
-    left: auto;
-    width: 100%;
-    text-align: center;
-    padding: 20px 0;
+    position: static !important;
+    width: 100% !important;
+    text-align: center !important;
+    padding: 20px 0 !important;
   }
 
   .hero-section .text-wrapper {
-    font-size: 24px;
-    line-height: 28px;
-    padding: 0 10px;
+    font-size: 24px !important;
+    line-height: 28px !important;
+    padding: 0 10px !important;
   }
 
   .hero-section .button {
-    position: relative;
-    top: auto;
-    left: auto;
-    width: 90%;
-    max-width: 300px;
-    margin: 20px auto;
-    padding: 12px 24px;
+    position: static !important;
+    display: block !important;
+    width: 90% !important;
+    max-width: 300px !important;
+    margin: 20px auto !important;
+    padding: 12px 24px !important;
+    left: auto !important;
+    top: auto !important;
   }
 
   .hero-section .core-capabilities {
-    position: relative;
-    top: auto;
-    left: auto;
-    width: 100%;
-    padding: 0 10px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 15px;
-    margin-top: 30px;
+    position: static !important;
+    width: 100% !important;
+    padding: 0 10px !important;
+    display: flex !important;
+    flex-wrap: wrap !important;
+    justify-content: center !important;
+    gap: 15px !important;
+    margin-top: 30px !important;
+    left: auto !important;
+    top: auto !important;
   }
 
   .hero-section .core-capabilities .text-wrapper-4 {
-    font-size: 13px;
-    padding: 10px 15px;
+    font-size: 13px !important;
+    padding: 10px 15px !important;
   }
 
   /* Top Navigation */
   .top-nav {
-    flex-direction: column;
+    position: static !important;
+    flex-direction: column !important;
     gap: 10px !important;
     padding: 15px !important;
+    width: 100% !important;
+    height: auto !important;
   }
 
   .top-nav .div {
-    font-size: 16px;
-    margin-bottom: 10px;
+    font-size: 16px !important;
+    margin-bottom: 10px !important;
   }
 
   .top-nav .tabs {
-    flex-direction: column;
+    flex-direction: column !important;
     gap: 8px !important;
+    width: 100% !important;
   }
 
   .top-nav .account,
   .top-nav .button-group {
-    width: 100%;
-    padding: 10px;
-    text-align: center;
+    width: 100% !important;
+    padding: 10px !important;
+    text-align: center !important;
+    position: static !important;
   }
 
   .top-nav .text-wrapper-1,
   .top-nav .text-wrapper-2,
   .top-nav .text-wrapper-3 {
-    font-size: 14px;
+    font-size: 14px !important;
   }
 
   /* About Section */
   .about-us {
-    padding: 30px 15px;
+    padding: 30px 15px !important;
   }
 
   .about-us .text-wrapper {
-    font-size: 24px;
-    margin-bottom: 20px;
+    font-size: 24px !important;
+    margin-bottom: 20px !important;
   }
 
   .about-us .core-capabilities-wrapper {
-    flex-direction: column;
-    gap: 20px;
+    flex-direction: column !important;
+    gap: 20px !important;
+    position: static !important;
   }
 
   .about-us .card {
-    padding: 20px 15px;
+    padding: 20px 15px !important;
+    position: static !important;
+    width: 100% !important;
   }
 
   .about-us .button-2 {
-    width: 90%;
-    margin: 20px auto;
-    padding: 12px 20px;
+    position: static !important;
+    width: 90% !important;
+    margin: 20px auto !important;
+    padding: 12px 20px !important;
+    left: auto !important;
+    top: auto !important;
   }
 
   /* Ventures Section */
   .ventures {
-    padding: 30px 15px;
+    padding: 30px 15px !important;
   }
 
   .ventures .text-wrapper {
-    font-size: 24px;
+    font-size: 24px !important;
   }
 
   .ventures .card {
-    width: 100%;
-    margin-bottom: 20px;
-    padding: 20px;
+    width: 100% !important;
+    margin-bottom: 20px !important;
+    padding: 20px !important;
+    position: static !important;
   }
 
   .ventures .button {
-    width: 100%;
-    padding: 12px 20px;
-    margin: 10px 0;
+    width: 100% !important;
+    padding: 12px 20px !important;
+    margin: 10px auto !important;
+    position: static !important;
+    display: block !important;
   }
 
   /* Contacts Section */
   .contacts {
-    padding: 30px 15px;
+    padding: 30px 15px !important;
   }
 
   .contacts .text-wrapper {
-    font-size: 24px;
-    margin: 20px 0;
+    font-size: 24px !important;
+    margin: 20px 0 !important;
   }
 
   .contacts .tell-us-what-you-re {
-    font-size: 14px;
-    padding: 0 10px;
-    line-height: 1.5;
+    font-size: 14px !important;
+    padding: 0 10px !important;
+    line-height: 1.5 !important;
   }
 
   .contacts form {
-    width: 100%;
-    padding: 0;
+    width: 100% !important;
+    padding: 0 !important;
+    position: static !important;
   }
 
   .contacts .form-element,
@@ -3939,96 +4012,104 @@ body {
     width: 100% !important;
     margin: 10px 0 !important;
     padding: 12px !important;
-    font-size: 16px;
+    font-size: 16px !important;
+    position: static !important;
+    display: block !important;
   }
 
   .contacts .input-5 {
-    flex-direction: column;
-    gap: 10px;
+    flex-direction: column !important;
+    gap: 10px !important;
+    width: 100% !important;
   }
 
   .contacts .input-5 .tags {
-    width: 100%;
-    flex-direction: column;
+    width: 100% !important;
+    flex-direction: column !important;
   }
 
   .contacts .input-5 .tags label {
-    width: 100%;
-    margin-bottom: 8px;
+    width: 100% !important;
+    margin-bottom: 8px !important;
   }
 
   .contacts .button {
-    position: relative;
-    top: auto;
-    left: auto;
-    width: 90%;
-    max-width: 300px;
-    margin: 20px auto;
-    padding: 12px 24px;
+    position: static !important;
+    display: block !important;
+    width: 90% !important;
+    max-width: 300px !important;
+    margin: 20px auto !important;
+    padding: 12px 24px !important;
+    left: auto !important;
+    top: auto !important;
   }
 
   .contacts .card {
-    width: 100%;
-    padding: 15px;
-    margin: 15px 0;
+    width: 100% !important;
+    padding: 15px !important;
+    margin: 15px 0 !important;
+    position: static !important;
   }
 
   .contacts .we-ll-reply-with {
-    position: relative;
-    top: auto;
-    left: auto;
-    width: 100%;
-    text-align: center;
-    margin: 20px 0;
+    position: static !important;
+    width: 100% !important;
+    text-align: center !important;
+    margin: 20px 0 !important;
+    opacity: 0.7 !important;
   }
 
   .contacts .rectangle-2 {
-    display: none;
+    display: none !important;
   }
 
   /* Images */
   .mask-group {
-    max-width: 100%;
-    height: auto;
+    max-width: 100% !important;
+    height: auto !important;
   }
 
   /* Thank You Page */
   .thank-you-container {
     padding: 30px 15px !important;
-    min-height: 100vh;
+    min-height: 100vh !important;
+    position: static !important;
+    width: 100% !important;
   }
 
   .thank-you-container .text-wrapper {
-    font-size: 24px;
+    font-size: 24px !important;
   }
 
   .thank-you-container p {
-    font-size: 14px;
-    padding: 0 10px;
+    font-size: 14px !important;
+    padding: 0 10px !important;
   }
 }
 
-/* Extra Small Screens */
+/* Extra Small Screens - iPhone */
 @media (max-width: 480px) {
-  :root {
-    --headline-h0-font-size: 22px;
-    --headline-h0-line-height: 26px;
-    --headline-h1-font-size: 18px;
-    --headline-h1-line-height: 22px;
-    --body-p0-font-size: 14px;
-    --body-p0-line-height: 20px;
-  }
-
-  /* Spacing and padding */
-  * {
-    margin: 0;
-    padding: 0;
-  }
-
   html,
   body {
-    width: 100%;
-    overflow-x: hidden;
+    width: 100vw !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    overflow-x: hidden !important;
+  }
+
+  :root {
+    --headline-h0-font-size: 22px !important;
+    --headline-h0-line-height: 26px !important;
+    --headline-h1-font-size: 18px !important;
+    --headline-h1-line-height: 22px !important;
+    --body-p0-font-size: 14px !important;
+    --body-p0-line-height: 20px !important;
+  }
+
+  * {
+    margin: 0 !important;
+    padding: 0 !important;
+    max-width: 100% !important;
   }
 
   .hero-section,
@@ -4037,51 +4118,61 @@ body {
   .contacts {
     padding: 20px 12px !important;
     margin: 0 !important;
+    width: 100% !important;
+    position: static !important;
+    height: auto !important;
   }
 
   .hero-section .text-wrapper {
-    font-size: 20px;
-    line-height: 24px;
+    font-size: 20px !important;
+    line-height: 24px !important;
   }
 
   .hero-section .button,
   .about-us .button-2,
   .contacts .button {
-    width: 100%;
-    max-width: none;
-    padding: 14px 20px;
-    font-size: 14px;
+    width: 100% !important;
+    max-width: 100% !important;
+    padding: 14px 20px !important;
+    font-size: 14px !important;
+    position: static !important;
+    margin: 15px 0 !important;
   }
 
   .top-nav {
-    padding: 12px 10px !important;
+    padding: 12px !important;
+    gap: 8px !important;
   }
 
   .top-nav .div {
-    font-size: 14px;
+    font-size: 14px !important;
   }
 
   .top-nav .text-wrapper-1,
   .top-nav .text-wrapper-2,
   .top-nav .text-wrapper-3 {
-    font-size: 12px;
+    font-size: 12px !important;
   }
 
   .about-us .card,
   .ventures .card,
   .contacts .card {
-    padding: 15px 12px;
+    padding: 15px 12px !important;
+    position: static !important;
+    width: 100% !important;
   }
 
   .contacts .contact-input,
   .contacts .contact-textarea,
   .contacts .form-element {
-    font-size: 16px; /* Prevents zoom on iOS */
+    font-size: 16px !important;
     padding: 14px !important;
+    width: 100% !important;
+    -webkit-appearance: none !important;
   }
 
   .contacts .input-5 .tags label {
-    font-size: 14px;
+    font-size: 14px !important;
   }
 
   /* Ensure buttons are touch-friendly (min 44px height) */
@@ -4089,17 +4180,27 @@ body {
   .button-2,
   .button-4,
   input[type="submit"],
-  input[type="button"] {
-    min-height: 44px;
-    min-width: 44px;
+  input[type="button"],
+  a.button,
+  a.button-2 {
+    min-height: 44px !important;
+    min-width: 44px !important;
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
   }
 
   .contacts .rectangle-2 {
-    display: none;
+    display: none !important;
   }
 
   .ellipse {
-    max-width: 100%;
+    display: none !important;
+  }
+
+  img {
+    max-width: 100% !important;
+    height: auto !important;
   }
 }
 
