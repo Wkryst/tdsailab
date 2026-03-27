@@ -3774,3 +3774,333 @@ body {
   line-height: normal;
 }
 
+/* Mobile Responsive Styles */
+@media (max-width: 768px) {
+  /* General adjustments */
+  :root {
+    --headline-h0-font-size: 28px;
+    --headline-h0-line-height: 32px;
+    --headline-h1-font-size: 22px;
+    --headline-h1-line-height: 26px;
+    --body-p0-font-size: 16px;
+    --body-p0-line-height: 24px;
+  }
+
+  /* Hero Section */
+  .hero-section {
+    min-height: 100vh;
+    position: relative;
+    padding: 20px;
+  }
+
+  .hero-section .group {
+    position: relative;
+    top: auto;
+    left: auto;
+    width: 100%;
+    text-align: center;
+    padding: 20px 0;
+  }
+
+  .hero-section .text-wrapper {
+    font-size: 24px;
+    line-height: 28px;
+    padding: 0 10px;
+  }
+
+  .hero-section .button {
+    position: relative;
+    top: auto;
+    left: auto;
+    width: 90%;
+    max-width: 300px;
+    margin: 20px auto;
+    padding: 12px 24px;
+  }
+
+  .hero-section .core-capabilities {
+    position: relative;
+    top: auto;
+    left: auto;
+    width: 100%;
+    padding: 0 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 30px;
+  }
+
+  .hero-section .core-capabilities .text-wrapper-4 {
+    font-size: 13px;
+    padding: 10px 15px;
+  }
+
+  /* Top Navigation */
+  .top-nav {
+    flex-direction: column;
+    gap: 10px !important;
+    padding: 15px !important;
+  }
+
+  .top-nav .div {
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+
+  .top-nav .tabs {
+    flex-direction: column;
+    gap: 8px !important;
+  }
+
+  .top-nav .account,
+  .top-nav .button-group {
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+  }
+
+  .top-nav .text-wrapper-1,
+  .top-nav .text-wrapper-2,
+  .top-nav .text-wrapper-3 {
+    font-size: 14px;
+  }
+
+  /* About Section */
+  .about-us {
+    padding: 30px 15px;
+  }
+
+  .about-us .text-wrapper {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+
+  .about-us .core-capabilities-wrapper {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .about-us .card {
+    padding: 20px 15px;
+  }
+
+  .about-us .button-2 {
+    width: 90%;
+    margin: 20px auto;
+    padding: 12px 20px;
+  }
+
+  /* Ventures Section */
+  .ventures {
+    padding: 30px 15px;
+  }
+
+  .ventures .text-wrapper {
+    font-size: 24px;
+  }
+
+  .ventures .card {
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 20px;
+  }
+
+  .ventures .button {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 10px 0;
+  }
+
+  /* Contacts Section */
+  .contacts {
+    padding: 30px 15px;
+  }
+
+  .contacts .text-wrapper {
+    font-size: 24px;
+    margin: 20px 0;
+  }
+
+  .contacts .tell-us-what-you-re {
+    font-size: 14px;
+    padding: 0 10px;
+    line-height: 1.5;
+  }
+
+  .contacts form {
+    width: 100%;
+    padding: 0;
+  }
+
+  .contacts .form-element,
+  .contacts .contact-input,
+  .contacts .contact-textarea {
+    width: 100% !important;
+    margin: 10px 0 !important;
+    padding: 12px !important;
+    font-size: 16px;
+  }
+
+  .contacts .input-5 {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .contacts .input-5 .tags {
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .contacts .input-5 .tags label {
+    width: 100%;
+    margin-bottom: 8px;
+  }
+
+  .contacts .button {
+    position: relative;
+    top: auto;
+    left: auto;
+    width: 90%;
+    max-width: 300px;
+    margin: 20px auto;
+    padding: 12px 24px;
+  }
+
+  .contacts .card {
+    width: 100%;
+    padding: 15px;
+    margin: 15px 0;
+  }
+
+  .contacts .we-ll-reply-with {
+    position: relative;
+    top: auto;
+    left: auto;
+    width: 100%;
+    text-align: center;
+    margin: 20px 0;
+  }
+
+  .contacts .rectangle-2 {
+    display: none;
+  }
+
+  /* Images */
+  .mask-group {
+    max-width: 100%;
+    height: auto;
+  }
+
+  /* Thank You Page */
+  .thank-you-container {
+    padding: 30px 15px !important;
+    min-height: 100vh;
+  }
+
+  .thank-you-container .text-wrapper {
+    font-size: 24px;
+  }
+
+  .thank-you-container p {
+    font-size: 14px;
+    padding: 0 10px;
+  }
+}
+
+/* Extra Small Screens */
+@media (max-width: 480px) {
+  :root {
+    --headline-h0-font-size: 22px;
+    --headline-h0-line-height: 26px;
+    --headline-h1-font-size: 18px;
+    --headline-h1-line-height: 22px;
+    --body-p0-font-size: 14px;
+    --body-p0-line-height: 20px;
+  }
+
+  /* Spacing and padding */
+  * {
+    margin: 0;
+    padding: 0;
+  }
+
+  html,
+  body {
+    width: 100%;
+    overflow-x: hidden;
+  }
+
+  .hero-section,
+  .about-us,
+  .ventures,
+  .contacts {
+    padding: 20px 12px !important;
+    margin: 0 !important;
+  }
+
+  .hero-section .text-wrapper {
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+  .hero-section .button,
+  .about-us .button-2,
+  .contacts .button {
+    width: 100%;
+    max-width: none;
+    padding: 14px 20px;
+    font-size: 14px;
+  }
+
+  .top-nav {
+    padding: 12px 10px !important;
+  }
+
+  .top-nav .div {
+    font-size: 14px;
+  }
+
+  .top-nav .text-wrapper-1,
+  .top-nav .text-wrapper-2,
+  .top-nav .text-wrapper-3 {
+    font-size: 12px;
+  }
+
+  .about-us .card,
+  .ventures .card,
+  .contacts .card {
+    padding: 15px 12px;
+  }
+
+  .contacts .contact-input,
+  .contacts .contact-textarea,
+  .contacts .form-element {
+    font-size: 16px; /* Prevents zoom on iOS */
+    padding: 14px !important;
+  }
+
+  .contacts .input-5 .tags label {
+    font-size: 14px;
+  }
+
+  /* Ensure buttons are touch-friendly (min 44px height) */
+  .button,
+  .button-2,
+  .button-4,
+  input[type="submit"],
+  input[type="button"] {
+    min-height: 44px;
+    min-width: 44px;
+  }
+
+  .contacts .rectangle-2 {
+    display: none;
+  }
+
+  .ellipse {
+    max-width: 100%;
+  }
+}
+
+
